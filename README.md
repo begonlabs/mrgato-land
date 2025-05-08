@@ -1,48 +1,78 @@
-# Astro Starter Kit: Basics
+# Mr. Gato 🎵🐱
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+<div align="center">
+  <a href="nothing here yet">
+    <img src="https://img.shields.io/badge/Login_with_Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Login with Discord"/>
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License: MIT"/>
+  </a>
+  <a href="https://ko-fi.com/T6T018BZDZ">
+    <img src="https://img.shields.io/badge/Support-Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi"/>
+  </a>
+</div>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+> **Mr. Gato** is a premium Discord music bot built for simplicity, great performance, and a smooth user experience. It supports **YouTube Music**, **Spotify**, **Deezer**, and **SoundCloud** in its pro plan — all for just **\$1.50/month**.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🎧 Features
 
-## 🚀 Project Structure
+* **Slash Commands** for everything — no need to remember prefixes!
+* Beautiful, minimal landing page built with **Astro**
+* **Fast, secure Discord login** integration
+* **Free Plan** with daily limits & basic features
+* **Pro Plan** for unlimited, cross-platform music experience
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Commands
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+| Command       | Description                                |
+| ------------- | ------------------------------------------ |
+| `/join`       | Join your voice channel                    |
+| `/leave`      | Leave the voice channel                    |
+| `/play`       | Play or queue a song (URL or search)       |
+| `/pause`      | Pause the current song                     |
+| `/resume`     | Resume the paused song                     |
+| `/skip`       | Skip to the next song                      |
+| `/queue`      | Show the current queue                     |
+| `/nowplaying` | Show the currently playing song            |
+| `/volume`     | Set the playback volume (1–100)            |
+| `/clear`      | Clear the music queue                      |
+| `/remove`     | Remove a song from the queue by position   |
+| `/shuffle`    | Shuffle the current queue                  |
+| `/move`       | Move a song to a different position        |
+| `/playlist`   | Add multiple songs from a YouTube playlist |
+| `/loop`       | Toggle loop mode for the current song      |
+| `/help`       | Show this help message                     |
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🆓 Free Plan Limits
 
-## 🧞 Commands
+* ✅ Access to `/join`, `/leave`, `/play`, `/pause`, `/resume`, `/skip`, `/queue`, `/nowplaying`, `/help`
+* ⛔ Max **10 songs/day**
+* ⛔ No access to: `/volume`, `/shuffle`, `/playlist`, `/remove`, `/move`, `/loop`, `/clear`
+* ✅ Works only with **YouTube Music**
 
-All commands are run from the root of the project, from a terminal:
+## 💎 Pro Plan — \$1.50/month
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+* 🔓 Unlimited usage
+* 🔊 Full access to all platforms: YouTube, Spotify, Deezer, SoundCloud
+* 🎚 Volume, shuffle, loop, and full queue control
+* ⚙️ Priority updates and support
 
-## 👀 Want to learn more?
+## 🚪 How to Get Started
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+1. Go to the [landing page](https://your-mr-gato-landing-page.com)
+2. Click on **Login with Discord**
+3. Choose your plan and start listening 🎶
+
+---
+
+## 🧑‍💻 Built by **Begonlabs** with <3
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=astro,ts,tailwind,discord" alt="Tech stack" />
+</div>
+
+<div align="center">
+  <p> Thanks for checking out Mr. Gato! Let’s bring music to your server, one meow at a time. 🐾 </p>
+</div>

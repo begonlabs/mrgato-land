@@ -1,0 +1,80 @@
+---
+import profileImage from '../assets/profile.jpg';
+
+// TODO: Convert JPG to SVG as well, fix black space issue
+---
+
+<section class="relative overflow-hidden py-20 md:py-32">
+  <div class="absolute inset-0 bg-gradient-to-b from-[#FFC0B4]/20 to-transparent opacity-30"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-[#FFC0B4]/20 to-transparent opacity-30"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-[#FFC0B4]/20 to-transparent opacity-30"></div>
+  
+  <div class="container relative px-4 md:px-6">
+    <div class="grid gap-10 lg:grid-cols-[1fr_400px] lg:gap-16 xl:grid-cols-[1fr_500px]">
+
+      <div class="flex flex-col justify-center space-y-6">
+        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent w-fit bg-[#FFC0B4] text-black hover:bg-[#FFC0B4]/80">
+          Discord Music Bot
+        </div>
+        
+        <div class="space-y-4">
+          <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+            Meet <span class="text-[#FFC0B4]">Mr. Gato</span>, Your Discord's New DJ
+          </h1>
+          <p class="max-w-[600px] text-white/70 text-lg md:text-xl">
+            The purr-fect music companion for your Discord server. High-quality music streaming from multiple platforms with simple commands.
+          </p>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-3">
+          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-11 rounded-md px-8 bg-[#FFC0B4] text-black hover:bg-[#FFC0B4]/80 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music mr-2 h-5 w-5">
+              <path d="M9 18V5l12-2v13"></path>
+              <circle cx="6" cy="18" r="3"></circle>
+              <circle cx="18" cy="16" r="3"></circle>
+            </svg>
+            Add to Discord
+          </button>
+          
+          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border h-11 rounded-md px-8 border-white/20 bg-white/5 text-white hover:bg-white/10 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help mr-2 h-5 w-5">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <path d="M12 17h.01"></path>
+            </svg>
+            View Commands
+          </button>
+        </div>
+        
+        <div class="flex items-center gap-4 pt-4">
+          <div class="flex -space-x-2">
+            <div class="h-8 w-8 rounded-full border-2 border-black bg-[#FFC0B4]"></div>
+            <div class="h-8 w-8 rounded-full border-2 border-black bg-[#FFC0B4]"></div>
+            <div class="h-8 w-8 rounded-full border-2 border-black bg-[#FFC0B4]"></div>
+            <div class="h-8 w-8 rounded-full border-2 border-black bg-[#FFC0B4]"></div>
+          </div>
+          <p class="text-sm text-white/70">
+            <span class="font-bold text-white">1,000+</span> servers already using Mr. Gato
+          </p>
+        </div>
+      </div>
+      
+      <div class="relative mx-auto lg:mx-0">
+        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-[#FFC0B4] to-[#FFD700] opacity-70 blur-xl"></div>
+        <div class="relative aspect-square overflow-hidden rounded-full border-8 border-black bg-[#FFC0B4] p-4 shadow-2xl">
+          <img 
+            alt="Mr. Gato" 
+            loading="lazy" 
+            width="400" 
+            height="400" 
+            decoding="async" 
+            data-nimg="1" 
+            class="h-full w-full object-cover" 
+            style="color:transparent" 
+            src={profileImage.src}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

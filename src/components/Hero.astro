@@ -1,30 +1,26 @@
 ---
 import profileImage from '../assets/profile.jpg';
-
 import AddToDiscordButton from '../ui/AddToDiscordButton.astro';
 import ViewCommandsButton from '../ui/ViewCommandsButton.astro';
-
 // TODO: Convert JPG to SVG as well, fix black space issue
 ---
-
-<section class="relative overflow-hidden py-20 md:py-32">
+<section class="relative overflow-hidden py-16 sm:py-20 md:py-24 lg:py-32">
   <div class="absolute inset-0 bg-gradient-to-b from-[#FFC0B4]/20 to-transparent opacity-30"></div>
   <div class="absolute inset-0 bg-gradient-to-b from-[#FFC0B4]/20 to-transparent opacity-30"></div>
   <div class="absolute inset-0 bg-gradient-to-b from-[#FFC0B4]/20 to-transparent opacity-30"></div>
   
-  <div class="container relative px-4 md:px-6">
-    <div class="grid gap-10 lg:grid-cols-[1fr_400px] lg:gap-16 xl:grid-cols-[1fr_500px]">
-
-      <div class="flex flex-col justify-center space-y-6">
+  <div class="container relative mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="grid gap-8 sm:gap-10 md:gap-12 lg:grid-cols-2 lg:gap-16 xl:grid-cols-[1fr_500px]">
+      <div class="flex flex-col justify-center space-y-5 sm:space-y-6">
         <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent w-fit bg-[#FFC0B4] text-black hover:bg-[#FFC0B4]/80">
           Discord Music Bot
         </div>
         
-        <div class="space-y-4">
-          <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+        <div class="space-y-3 sm:space-y-4">
+          <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl/none">
             Meet <span class="text-[#FFC0B4]">Mr. Gato</span>, Your Discord's New DJ
           </h1>
-          <p class="max-w-[600px] text-white/70 text-lg md:text-xl">
+          <p class="max-w-[600px] text-white/70 text-base sm:text-lg md:text-xl">
             The purr-fect music companion for your Discord server. High-quality music streaming from multiple platforms with simple commands.
           </p>
         </div>
@@ -32,23 +28,22 @@ import ViewCommandsButton from '../ui/ViewCommandsButton.astro';
         <div class="flex flex-col sm:flex-row gap-3">
           <AddToDiscordButton />
           <ViewCommandsButton />
-          
         </div>
         
         <div class="flex items-center gap-4 pt-4">
           <div class="flex -space-x-2">
-            <div class="h-8 w-8 rounded-full border-2 border-black bg-[#FFC0B4]"></div>
-            <div class="h-8 w-8 rounded-full border-2 border-black bg-[#FFC0B4]"></div>
-            <div class="h-8 w-8 rounded-full border-2 border-black bg-[#FFC0B4]"></div>
-            <div class="h-8 w-8 rounded-full border-2 border-black bg-[#FFC0B4]"></div>
+            <div class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 rounded-full border-2 border-black bg-[#FFC0B4]"></div>
+            <div class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 rounded-full border-2 border-black bg-[#FFC0B4]"></div>
+            <div class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 rounded-full border-2 border-black bg-[#FFC0B4]"></div>
+            <div class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 rounded-full border-2 border-black bg-[#FFC0B4]"></div>
           </div>
-          <p class="text-sm text-white/70">
+          <p class="text-xs sm:text-sm text-white/70">
             <span class="font-bold text-white">1,000+</span> servers already using Mr. Gato
           </p>
         </div>
       </div>
       
-      <div class="relative mx-auto lg:mx-0">
+      <div class="relative mx-auto w-full max-w-[320px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-full lg:mx-0">
         <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-[#FFC0B4] to-[#FFD700] opacity-70 blur-xl"></div>
         <div class="relative aspect-square overflow-hidden rounded-full border-8 border-black bg-[#FFC0B4] p-4 shadow-2xl">
           <img 

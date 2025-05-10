@@ -1,11 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+import Navbar from '../components/Navbar.astro';
 import HeroSection from '../components/Hero.astro';
 import Features from '../components/Features.astro';
+import Commands from '../components/Commands.astro';
 ---
 
 <Layout title="Mr. Gato | Home">
+  <Navbar />
   <HeroSection />
   <Features />
+  <Commands />
 </Layout>

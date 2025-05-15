@@ -1,0 +1,13 @@
+---
+const { command, description } = Astro.props;
+---
+
+<div class="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-4 h-full">
+    <div class="flex h-10 w-10 items-center justify-center rounded-full bg-[#FFC0B4]/10 flex-shrink-0">
+        <slot />
+    </div>
+    <div class="min-w-0">
+        <h3 class="font-bold truncate">{command}</h3>
+        <p class="text-sm text-white/70 truncate">{description}</p>
+    </div>
+</div>

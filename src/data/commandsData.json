@@ -1,0 +1,91 @@
+{
+    "commands":[
+      {
+        "category": [
+          {
+            "command": "/play",
+            "description": "Play or queue a song",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-play h-5 w-5 text-[#FFC0B4]'><polygon points='6 3 20 12 6 21 6 3'></polygon></svg>"
+          },
+          {
+            "command": "/pause",
+            "description": "Pause current song",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-pause h-5 w-5 text-[#FFC0B4]'><rect x='14' y='4' width='4' height='16' rx='1'></rect><rect x='6' y='4' width='4' height='16' rx='1'></rect></svg>"
+          },
+          {
+            "command": "/resume",
+            "description": "Resume playback",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-play h-5 w-5 text-[#FFC0B4]'><polygon points='6 3 20 12 6 21 6 3'></polygon></svg>"
+          },
+          {
+            "command": "/skip",
+            "description": "Skip to next song",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-skip-forward h-5 w-5 text-[#FFC0B4]'><polygon points='5 4 15 12 5 20 5 4'></polygon><line x1='19' x2='19' y1='5' y2='19'></line></svg>"
+          },
+          {
+            "command": "/queue",
+            "description": "Show current queue",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-list h-5 w-5 text-[#FFC0B4]'><path d='M3 12h.01'></path><path d='M3 18h.01'></path><path d='M3 6h.01'></path><path d='M8 12h13'></path><path d='M8 18h13'></path><path d='M8 6h13'></path></svg>"
+          }
+        ]
+      },
+      {
+        "category": [
+          {
+            "command": "/nowplaying",
+            "description": "Show current song",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-music h-5 w-5 text-[#FFC0B4]'><path d='M9 18V5l12-2v13'></path><circle cx='6' cy='18' r='3'></circle><circle cx='18' cy='16' r='3'></circle></svg>"
+          },
+          {
+            "command": "/volume",
+            "description": "Adjust volume (1-100)",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-volume2 h-5 w-5 text-[#FFC0B4]'><path d='M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z'></path><path d='M16 9a5 5 0 0 1 0 6'></path><path d='M19.364 18.364a9 9 0 0 0 0-12.728'></path></svg>"
+          },
+          {
+            "command": "/clear",
+            "description": "Clear the queue",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-x h-5 w-5 text-[#FFC0B4]'><path d='M18 6 6 18'></path><path d='m6 6 12 12'></path></svg>"
+          },
+          {
+            "command": "/remove",
+            "description": "Remove song from queue",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-x h-5 w-5 text-[#FFC0B4]'><path d='M18 6 6 18'></path><path d='m6 6 12 12'></path></svg>"
+          },
+          {
+            "command": "/shuffle",
+            "description": "Shuffle queue",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-shuffle h-5 w-5 text-[#FFC0B4]'><path d='M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22'></path><path d='m18 2 4 4-4 4'></path><path d='M2 6h1.9c1.5 0 2.9.9 3.6 2.2'></path><path d='M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8'></path><path d='m18 14 4 4-4 4'></path></svg>"
+          }
+        ]
+      },
+      {
+        "category": [
+          {
+            "command": "/move",
+            "description": "Reposition song",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-music h-5 w-5 text-[#FFC0B4]'><path d='M9 18V5l12-2v13'></path><circle cx='6' cy='18' r='3'></circle><circle cx='18' cy='16' r='3'></circle></svg>"
+          },
+          {
+            "command": "/playlist",
+            "description": "Add YouTube playlist",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-list h-5 w-5 text-[#FFC0B4]'><path d='M3 12h.01'></path><path d='M3 18h.01'></path><path d='M3 6h.01'></path><path d='M8 12h13'></path><path d='M8 18h13'></path><path d='M8 6h13'></path></svg>"
+          },
+          {
+            "command": "/loop",
+            "description": "Toggle loop mode",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-repeat h-5 w-5 text-[#FFC0B4]'><path d='m17 2 4 4-4 4'></path><path d='M3 11v-1a4 4 0 0 1 4-4h14'></path><path d='m7 22-4-4 4-4'></path><path d='M21 13v1a4 4 0 0 1-4 4H3'></path></svg>"
+          },
+          {
+            "command": "/help",
+            "description": "Show all commands",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-circle-help h-5 w-5 text-[#FFC0B4]'><circle cx='12' cy='12' r='10'></circle><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'></path><path d='M12 17h.01'></path></svg>"
+          },
+          {
+            "command": "/join - /leave",
+            "description": "Voice channel control",
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-music h-5 w-5 text-[#FFC0B4]'><path d='M9 18V5l12-2v13'></path><circle cx='6' cy='18' r='3'></circle><circle cx='18' cy='16' r='3'></circle></svg>"
+          }
+        ]
+      }
+    ]
+  }

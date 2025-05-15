@@ -16,6 +16,7 @@ interface Props {
   buttonClass: string;
   borderClass?: string;
   popularBadge?: boolean;
+  isPro?: boolean;
 }
 
 const {
@@ -28,14 +29,19 @@ const {
   buttonIcon = '',
   buttonClass,
   borderClass = "border-white/10",
-  popularBadge = false
+  popularBadge = false,
+  isPro = false 
 } = Astro.props as Props;
 ---
 
 
-<div class={`relative overflow-hidden rounded-xl border ${borderClass} bg-black/50 p-6 transition-all duration-300 hover:border-white/20 hover:shadow-lg ${isPopular ? 'bg-gradient-to-b from-black/80 to-black shadow-lg shadow-[#FFC0B4]/10' : ''}`}>
-  {isPopular && (
+<div class={`relative overflow-hidden rounded-xl border ${isPro ? 'border-white/10 hover:border-[#FFD700]/30 hover:shadow-lg hover:shadow-[#FFD700]/5' : borderClass} ${isPro ? 'bg-gradient-to-b from-[#FFD700]/10 to-black/50' : 'bg-black/50'} p-6 transition-all duration-300 ${!isPro && isPopular ? 'bg-gradient-to-b from-black/80 to-black shadow-lg shadow-[#FFC0B4]/10' : ''} ${!isPro ? 'hover:border-white/20 hover:shadow-lg' : ''}`}>
+  {isPopular && !isPro && (
     <div class="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-[#FFC0B4]/20 blur-2xl animate-pulse"></div>
+  )}
+  
+  {isPro && (
+    <div class="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-[#FFD700]/10 blur-2xl"></div>
   )}
   
   {popularBadge && (
@@ -44,7 +50,7 @@ const {
     </div>
   )}
 
-  <div class="space-y-4">
+  <div class="relative space-y-4">
     <div class="flex items-center gap-2 group">
       <h3 class="text-xl font-bold group-hover:text-white transition-colors duration-300">{title}</h3>
       <Fragment set:html={icon} />
@@ -60,14 +66,14 @@ const {
       {features.map((feature) => (
         <li class="flex items-center gap-2">
           <Fragment set:html={feature.icon} />
-          <span class={feature.strike ? 'text-white/50 line-through' : ''}>{feature.text}</span>
+          <span class={feature.strike ? 'text-white/50' : ''}>{feature.text}</span>
         </li>
       ))}
     </ul>
   </div>
 
   <div class="mt-6">
-    <button class={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 w-full h-10 px-4 py-2 ${buttonClass}`}>
+    <button class={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 w-full h-10 px-4 py-2 ${isPro ? 'bg-gradient-to-r from-[#FFD700] to-[#FFC0B4] text-black hover:opacity-90' : buttonClass}`}>
       <Fragment set:html={buttonIcon} />
       {buttonText}
     </button>

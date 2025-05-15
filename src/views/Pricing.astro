@@ -4,11 +4,12 @@ import PricingCard from '../components/PricingCard.astro';
 const CheckIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-green-500"><path d="M20 6 9 17l-5-5"/></svg>`;
 const XIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x h-5 w-5 text-red-500"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`;
 const MusicIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music mr-2 h-5 w-5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`;
-const CrownIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-crown h-5 w-5 text-[#FFD700]"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>`;
+const CrownIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-crown"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>`;
 const SparklesIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-5 w-5 text-[#FFC0B4]"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>`;
 const UsersIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-5 w-5 text-indigo-400"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`;
 const MessageIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle-plus mr-2 h-5 w-5"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M8 12h4"/><path d="M12 8v4"/></svg>`;
 const DiscordIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 127.14 96.36" fill="#000000"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>`;
+
 ---
 
 
@@ -39,8 +40,8 @@ const DiscordIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="
         buttonClass="border-white/20 bg-white/5 text-white hover:bg-white/10 hover:border-white/30 transition-all duration-300"
         features={[
           { icon: CheckIcon, text: "YouTube Music only" },
-          { icon: CheckIcon, text: "10 songs/day limit" },
-          { icon: CheckIcon, text: "Basic controls" },
+          { icon: CheckIcon, text: "Limited to 10 songs per day" },
+          { icon: CheckIcon, text: "Basic playback controls" },
           { icon: XIcon, text: "Volume control", strike: true },
           { icon: XIcon, text: "Shuffle mode", strike: true },
           { icon: XIcon, text: "Extra platforms", strike: true }
@@ -79,14 +80,15 @@ const DiscordIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="
         icon={CrownIcon}
         buttonText="Get Pro"
         buttonIcon={CrownIcon}
+        isPro={true}
         buttonClass="border-[#FFD700]/20 bg-[#FFD700]/5 text-[#FFD700] hover:bg-[#FFD700]/20 hover:scale-105 transition-all duration-300"
         features={[
           { icon: CheckIcon, text: "All music platforms" },
-          { icon: CheckIcon, text: "Priority queue" },
-          { icon: CheckIcon, text: "24/7 playback" },
-          { icon: CheckIcon, text: "Custom presets" },
-          { icon: CheckIcon, text: "VIP support" },
-          { icon: CheckIcon, text: "Early access" }
+          { icon: CheckIcon, text: "Unlimited songs" },
+          { icon: CheckIcon, text: "Priority support" },
+          { icon: CheckIcon, text: "Volume adjustment" },
+          { icon: CheckIcon, text: "Shuffle and loop features" },
+          { icon: CheckIcon, text: "Early access to new features" }
         ]}
       >
         <p slot="description" class="text-white/70">Ultimate experience for serious music communities</p>

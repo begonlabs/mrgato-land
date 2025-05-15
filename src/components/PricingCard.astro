@@ -33,9 +33,9 @@ const {
 ---
 
 
-<div class={`relative overflow-hidden rounded-xl border ${borderClass} bg-black/50 p-6 transition-all hover:border-white/20 hover:shadow-lg ${isPopular ? 'bg-gradient-to-b from-black/80 to-black shadow-lg shadow-[#FFC0B4]/10' : ''}`}>
+<div class={`relative overflow-hidden rounded-xl border ${borderClass} bg-black/50 p-6 transition-all duration-300 hover:border-white/20 hover:shadow-lg ${isPopular ? 'bg-gradient-to-b from-black/80 to-black shadow-lg shadow-[#FFC0B4]/10' : ''}`}>
   {isPopular && (
-    <div class="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-[#FFC0B4]/20 blur-2xl"></div>
+    <div class="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-[#FFC0B4]/20 blur-2xl animate-pulse"></div>
   )}
   
   {popularBadge && (
@@ -45,8 +45,8 @@ const {
   )}
 
   <div class="space-y-4">
-    <div class="flex items-center gap-2">
-      <h3 class="text-xl font-bold">{title}</h3>
+    <div class="flex items-center gap-2 group">
+      <h3 class="text-xl font-bold group-hover:text-white transition-colors duration-300">{title}</h3>
       <Fragment set:html={icon} />
     </div>
     

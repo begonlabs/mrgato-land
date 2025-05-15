@@ -1,16 +1,20 @@
 ---
 import profileLogo from '../assets/profile.png';
 import DiscordLoginButton from '../components/DiscordButton.astro';
-
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton
+} from '@clerk/astro/components';
 
 const navItems = [
   { href: "#features", label: "Features" },
   { href: "#commands", label: "Commands" },
   { href: "#pricing", label: "Pricing" },
 ];
-
-// TODO: Convert Mr. Gato's JPG into SVG
 ---
+
 
 <header class="sticky top-2 z-50 w-auto py-1">
   <div class="container mx-auto max-w-7xl">
@@ -38,19 +42,40 @@ const navItems = [
           ))}
         </nav>
 
-        <div class="flex items-center gap-3">
-          <div class="hidden md:block">
-            <DiscordLoginButton size="sm" />
+        <SignedOut>
+          <div class="flex items-center gap-3">
+            <div class="hidden md:block">
+              <DiscordLoginButton size="sm" />
+            </div>
+            <div class="md:hidden flex items-center">
+              <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
           </div>
-          
-          <div class="md:hidden flex items-center">
-            <button id="mobile-menu-button" class="text-white focus:outline-none">
-              <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
+        </SignedOut>
+
+        <SignedIn>
+          <div class="flex items-center gap-3">
+            <div class="hidden md:block">
+              <div class="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full ">
+                <div class="h-full w-full flex items-center justify-center">
+                  <UserButton afterSignOutUrl="/" />
+                </div>
+              </div>
+            </div>
+            <div class="md:hidden flex items-center">
+              <div class="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full">
+                <div class="h-full w-full flex items-center justify-center">
+                  <UserButton afterSignOutUrl="/" />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </SignedIn>
       </div>
     </div>
   </div>

@@ -1,0 +1,116 @@
+---
+import PricingCard from '../components/PricingCard.astro';
+
+const CheckIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-green-500"><path d="M20 6 9 17l-5-5"/></svg>`;
+const XIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x h-5 w-5 text-red-500"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`;
+const MusicIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music mr-2 h-5 w-5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`;
+const CrownIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-crown h-5 w-5 text-[#FFD700]"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>`;
+const SparklesIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-5 w-5 text-[#FFC0B4]"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>`;
+const UsersIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-5 w-5 text-indigo-400"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`
+const MessageIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle-plus mr-2 h-5 w-5"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M8 12h4"/><path d="M12 8v4"/></svg>`;
+---
+
+<section id="pricing" class="py-20 md:py-32 bg-gradient-to-b from-black/50 to-black">
+  <div class="container px-4 md:px-6 mx-auto">
+    <div class="flex flex-col items-center justify-center space-y-4 text-center">
+      <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-[#FFC0B4] text-black hover:bg-[#FFC0B4]/80">
+        Pricing
+      </div>
+      
+      <div class="space-y-2">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          Choose the Perfect Plan for Your Server
+        </h2>
+        <p class="mx-auto max-w-[700px] text-white/70 md:text-xl">
+          Select the plan that best fits your Discord server's needs. Upgrade anytime to unlock more features.
+        </p>
+      </div>
+    </div>
+
+    <div class="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <PricingCard
+        title="Free"
+        price="$0"
+        icon={CrownIcon}
+        buttonText="Get Started Free"
+        buttonIcon={MusicIcon}
+        buttonClass="border-white/20 bg-white/5 text-white hover:bg-white/10"
+        features={[
+          { icon: CheckIcon, text: "YouTube Music only" },
+          { icon: CheckIcon, text: "10 songs/day limit" },
+          { icon: CheckIcon, text: "Basic controls" },
+          { icon: XIcon, text: "Volume control", strike: true },
+          { icon: XIcon, text: "Shuffle mode", strike: true },
+          { icon: XIcon, text: "Extra platforms", strike: true }
+        ]}
+      >
+        <p slot="description" class="text-white/70">Perfect for small servers starting with music bots</p>
+      </PricingCard>
+
+      <PricingCard
+        title="Premium"
+        price="$1.50"
+        isPopular={true}
+        popularBadge={true}
+        icon={SparklesIcon}
+        borderClass="border-2 border-[#FFC0B4]"
+        buttonText="Go Premium"
+        buttonClass="bg-[#FFC0B4] text-black hover:bg-[#FFC0B4]/80"
+        features={[
+          { icon: CheckIcon, text: "YouTube + SoundCloud" },
+          { icon: CheckIcon, text: "Unlimited songs" },
+          { icon: CheckIcon, text: "Advanced controls" },
+          { icon: CheckIcon, text: "Volume adjustment" },
+          { icon: CheckIcon, text: "Shuffle & Loop" },
+          { icon: XIcon, text: "Spotify/Deezer", strike: true }
+        ]}
+      >
+        <p slot="description" class="text-white/70">Best for growing communities needing more features</p>
+      </PricingCard>
+
+      <PricingCard
+        title="Pro"
+        price="$3.99"
+        icon={CrownIcon}
+        buttonText="Get Pro"
+        buttonClass="border-[#FFD700]/20 bg-[#FFD700]/5 text-[#FFD700] hover:bg-[#FFD700]/10"
+        features={[
+          { icon: CheckIcon, text: "All music platforms" },
+          { icon: CheckIcon, text: "Priority queue" },
+          { icon: CheckIcon, text: "24/7 playback" },
+          { icon: CheckIcon, text: "Custom presets" },
+          { icon: CheckIcon, text: "VIP support" },
+          { icon: CheckIcon, text: "Early access" }
+        ]}
+      >
+        <p slot="description" class="text-white/70">Ultimate experience for serious music communities</p>
+      </PricingCard>
+    </div>
+
+    <div class="mt-16 max-w-5xl mx-auto">
+      <PricingCard
+        title="Enterprise"
+        price="Custom"
+        icon={UsersIcon}
+        borderClass="border-indigo-400/30"
+        buttonText="Contact Team"
+        buttonIcon={MessageIcon}
+        buttonClass="border-indigo-400/20 bg-indigo-400/5 text-indigo-400 hover:bg-indigo-400/10"
+        features={[
+          { icon: CheckIcon, text: "Multi-server management" },
+          { icon: CheckIcon, text: "Custom integrations" },
+          { icon: CheckIcon, text: "Dedicated support" },
+          { icon: CheckIcon, text: "White-label branding" },
+          { icon: CheckIcon, text: "API Access" },
+          { icon: CheckIcon, text: "Enterprise SLA" }
+        ]}
+      >
+        <p slot="description" class="text-white/70">
+          Custom solutions for large communities and organizations. 
+          <br class="hidden md:inline" />
+          Scale across multiple servers with premium support.
+        </p>
+      </PricingCard>
+    </div>
+  </div>
+</section>

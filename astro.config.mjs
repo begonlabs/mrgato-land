@@ -5,8 +5,8 @@ import netlify from "@astrojs/netlify";
 
 export default defineConfig({
   integrations: [clerk()],
-  adapter: netlify({ edge: true }),
   output: "server",
+  adapter: netlify(),  
   vite: {
     plugins: [tailwindcss()],
   },

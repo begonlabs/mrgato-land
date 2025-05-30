@@ -1,17 +1,13 @@
-// @ts-check
 import { defineConfig } from "astro/config";
-
 import tailwindcss from "@tailwindcss/vite";
 import clerk from "@clerk/astro";
-import node from "@astrojs/node";
+import netlify from "@astrojs/netlify";
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [clerk()],
-  adapter: node({ mode: "standalone" }),
+  adapter: netlify({ edge: false }), // edge: true
   output: "server",
   vite: {
     plugins: [tailwindcss()],
   },
 });
-

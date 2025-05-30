@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@astrojs/netlify':
+        specifier: ^6.3.4
+        version: 6.3.4(@types/node@22.15.29)(astro@5.7.11(@netlify/blobs@8.2.0)(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.2)(typescript@5.8.3))(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.2)
       '@astrojs/node':
         specifier: ^9.2.1
         version: 9.2.1(astro@5.7.11(@netlify/blobs@8.2.0)(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.2)(typescript@5.8.3))
@@ -23,10 +26,6 @@ importers:
       tailwindcss:
         specifier: ^4.1.5
         version: 4.1.5
-    devDependencies:
-      '@astrojs/netlify':
-        specifier: ^6.3.4
-        version: 6.3.4(@types/node@22.15.29)(astro@5.7.11(@netlify/blobs@8.2.0)(@types/node@22.15.29)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.2)(typescript@5.8.3))(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.2)
 
 packages:
 
